@@ -77,7 +77,7 @@ async fn handler(
 
 `State` also supports extracting "substates". See [the docs][state docs] for more details.
 
-While `Extension` still works we recommend users migrate to `State`. Both
+While `Extension` still works we recommend users migrate to `State`, both
 because it is more type safe but also because it is faster.
 
 ## Type safe extractor ordering
@@ -239,7 +239,7 @@ let app = Router::new()
 async fn foo() {}
 ```
 
-If you want to opt-in to the old behavior you can use [`RouterExt::route_with_tsr`]
+If you want to opt into the old behavior you can use [`RouterExt::route_with_tsr`]
 
 ## Mix wildcard routes and regular routes
 
